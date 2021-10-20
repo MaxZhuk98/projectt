@@ -1,9 +1,21 @@
 'use strict';
 
-// let incr = 10;
-// let decr = 10;
+const numberOfFilms = +prompt('Сколько фильмов вы уже посмотрели?', '');
 
-// console.log(incr++);
-// console.log(decr--);
+const perconalMovieDB = {
+  count: numberOfFilms,
+  movies: {},
+  actors: {},
+  gennres: [],
+  privat: false,
+};
 
-console.log(4 * 3 === 12);
+const a = prompt('Один из последних просмотренных фильмов?', ''),
+  b = prompt('На сколько оцените его?', ''),
+  c = prompt('Один из последних просмотренных фильмов?', ''),
+  d = prompt('На сколько оцените его?', '');
+
+perconalMovieDB.movies[a] = b;
+perconalMovieDB.movies[c] = d;
+
+console.log(perconalMovieDB.movies);
